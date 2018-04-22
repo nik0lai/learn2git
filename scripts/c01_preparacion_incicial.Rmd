@@ -1,0 +1,133 @@
+---
+title: "Git y R"
+author: "NSF"
+date: "April 8, 2018"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Cuenta GitHub
+
+Crea una cuenta gratis en GitHub <http://github.com>.
+
+## Instala R para tu sistema operativo.  
+* [Windows](https://cloud.r-project.org/bin/windows/base/)  
+* [Mac OS X](https://cloud.r-project.org/bin/macosx/)  
+* [Linux](https://cloud.r-project.org/)
+
+Instala [R Studio](https://www.rstudio.com/products/rstudio/download/preview/).  
+* Bajo "Desktop Version" encontrarás las versiones correspondientes para Windows Vista/7/8/10, Mac OS X, y Linux.
+
+Actualiza los paquetes de R.  
+* Para actualizar los paquetes debes correr la siguiente linea en la consola de R Studio:
+`update.packages(ask = FALSE, checkBuilt = TRUE)`
+
+## Revisa si Git ya está instalado
+
+## Instalar Git
+
+### Windows
+
+Instala [Git para Windows](https://gitforwindows.org/).  
+Durante la instalación sólo debes prestar atención a dos detalles:  
+* Asegurate de marcar la opción "Use Git from the Windows Command Prompt".  
+* Para asegurar el correcto funcionamiento de R Studio y Git es preferible instalar Git en el siguiente directorio:
+`C:/ProgramFiles/`  
+Deberías obtener algo así:
+`C:/ProgramFiles/Git/bin/git.exe`  
+
+### Mac OS
+**Opcion 1**. Instala `Xcode command line tools`, donde viene incluido Git. Si tu OS es anterior a 10.11 El Capitan probablemente tendrás que instalar `Xcode command line tools` obligatoriamente para que R Studio y Git puedan comunicarse.  
+
+En la linea de comandos ejecuta la siguiente linea:  
+`xcode-select -- install`  
+
+Si llegas a actualizar el sistema operativo de tu Mac, es posible que necesites ejecutar nuevamnete la linea anterior y/o aceptar nuevamente la licencia de Xcode.
+
+**Opcion 2**. Instala [Homebrew](http://brew.sh/) y luego ejectua esta linea de código en la terminal:
+`brew install git`
+
+### Linux
+
+Ubuntu o Debian Linux:  
+`sudo apt-get install git`  
+
+Fedora o RedHat Linux:  
+`sudo yum install git`  
+
+## Configura Git
+
+En la consola ejecuta las siguientes lineas (substituye nombre e email con tu información y ejecuta una linea a la vez):
+
+`git config --global user.name 'Nicolas Sanchez'`
+`git config --global user.mail 'nicolas.csanchez@gmail.com'`
+`git config --global --list`  
+
+Puedes acceder a la consola desde R Studio en Tools > Terminal o Tools > Shell.
+Adicionalmente, si tienes Windows y tienes problemas con los comandos `git config` considera que existen distintos tipos de consolas y puede que estés en la incorrecta. En la barra superior debería decir `MSYS` o `MINGW64`, no `cmd.exe`.
+
+En cuanto al nombre de usuario, este no tiene que ser necesariamente igual que el nombre de tu cuenta GitHub. Los commits que hagas llevarán este nombre, por lo que debería ser informativo para otras personas que trabajen contigo.  
+En cuanto al email, este debe ser el email de tu cuenta GitHub.  
+Dado que las dos primeras lineas no imprimirán nada en la consola, la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores.
+
+## Conectando con GitHub  
+
+### Crea un repositorio en GitHub  
+
+Asegurate de haber ingresado a tu cuenta en https://github.com.  
+Presiona el botón "New repository", o, si estás en la página de tu perfil, debes ir a "Repositories" y luego "New".  
+El nombre del repositorio será: `newrepo`. Además marcaremos la opción "Initialize this repository with a README". Para crear el repositorio seleccionamos "Create repository".  
+
+Para usar este repositorio de forma local vamos a copiar la dirección HTTPS presionando el botón verde "Clone or Download".
+
+### Clona el repositorio a un computador local
+
+Escoge una carpeta donde quieres ubicar tu repositorio y asegurate de encontrarte en esa carpeta desde la consola. Puedes usar `pwd` en la consola para saber en que carpeta de encuentras. Para ir de una carpeta a otra puedes utilizar `cd` (por ejemplo `cd ~/Documentos`).
+
+Para clonar el repositorio usaremos el enlace que copiamos anteriormente y ejecutaremos el siguiente codigo en la consola:
+`git clone enlace_al_repositorio`  
+Debería verse algo parecido a esto:  
+`git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git`  
+
+Al correr la linea (si todo sale bien) deberían ver algo así en la consola.
+
+[replace this with own example]  
+`nicolas@gitwithr tmp $ git clone https://github.com/jennybc/myrepo.git`  
+`Cloning into 'myrepo'...`  
+`remote: Counting objects: 3, done.`  
+`remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0`  
+`Unpacking objects: 100% (3/3), done.`  
+`Checking connectivity... done.`  
+
+### Cambio, commit y push
+
+Estas son las tres acciones que realizarás la mayor cantidad de veces cuando trabajes con Git.  
+Para ilustrar estas acciones vamos a agregar una linea de texto al archivo README.md que se encuentra en el repositorio que hemos creado anteriormente. Agregaremos esta nueva linea directamente desde la consola (esta linea de comando no devolverá nada a la consola):
+
+`echo "Escribí este linea localmente desde mi computador" >> README.md`  
+
+Tambien, pueden simplementa abrir el archivo con algún procesador de texto (como gedit, notepad, etc.), agregar una linea de texto manualmente y guardar el archivo.
+
+Siempre que hagamos cambios en los archivos que se encuentran dentro del repositorio podremos ver que archivos han sido modificados utilizando `git status` en la consola.  
+
+En la consola debería aparecer algo así:
+`ejemplo consola de git status`  
+
+Ahora haremos commit a nuestro cambio y lo pushearemos (subiremos) al repositorio remoto que se encuentra en GitHub.  
+Primero agregaremos los archivos que queremos agregar a nuestro commit:  
+`git add nombre_archivo`  
+Luego haremos el commit:  
+`git commit -m "Commit hecho desde mi computadora local"`  
+Por último, pushearemos el commit:  
+`git push`
+
+En este ejemplo `-m` es un indicador (o flag) que indica que lo que viene a continuación es un mesaje que será incluido como etiqueta del commit. Git requiere que cada commit tenga un mensaje que indique información sobre los cambios asociados al commit. Si olvidas agregar `-m` a `git commit` git solicitará mediante una terminal de texto un mensaje para el commit.  
+Los mensajes asociados a los commit debieran dar información clara y concisa sobre los cambios que incluye el commit. Estos mensajes debieran ser claros para ti en el futuro y para otros colaboradores.
+
+### Han llegado mis cambios y commits al repositorio remoto en GitHub?
+
+En tu explorar de internet entra a tu repositorio en GitHub. Ahí deberías ver la línea que hemos ingresado localmente en nuestro computador ("Escribí este linea localmente desde mi computador").  
+Si seleccionas "commits" puedes que habrá un commit con el mensaje que hemos ingresado en la consola al hacer commit ("Commit hecho desde mi computadora local").
