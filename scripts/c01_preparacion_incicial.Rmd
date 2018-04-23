@@ -1,5 +1,5 @@
 ---
-title: "Git y R"
+title: "Git y tu, una historia de amor"
 author: "NSF"
 date: "April 8, 2018"
 output: html_document
@@ -9,37 +9,29 @@ output: html_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+## Git y Github, otra historia de amor.
+
+Git permite llevar registro y control sobre los cambios que realizamos sobre un repositorio. GitHub es una plataforma online que permite almacenar repositorios de forma remota (en la internets). Las cuentas gratuitas de GitHub permiten tener un número ilimitado de repositorios públicos. Para utilizar repositorios privados se puede o bien pagar una subscripción, o solicitar cuentas premium para estudiantes u otras organizaciones.
+
 ## Cuenta GitHub
 
-Crea una cuenta gratis en GitHub <http://github.com>.
+Primero partiremos creando una cuenta gratis en [GitHub](http://github.com). Necesitaremos un nombre de usuario, un correo electrónico y una contraseña.
 
-## Instala R para tu sistema operativo.  
-* [Windows](https://cloud.r-project.org/bin/windows/base/)  
-* [Mac OS X](https://cloud.r-project.org/bin/macosx/)  
-* [Linux](https://cloud.r-project.org/)
+## Instalación Git
 
-Instala [R Studio](https://www.rstudio.com/products/rstudio/download/preview/).  
-* Bajo "Desktop Version" encontrarás las versiones correspondientes para Windows Vista/7/8/10, Mac OS X, y Linux.
+### Cruza los dedos y revisa si Git ya está instalado
 
-Actualiza los paquetes de R.  
-* Para actualizar los paquetes debes correr la siguiente linea en la consola de R Studio:
-`update.packages(ask = FALSE, checkBuilt = TRUE)`
-
-## Revisa si Git ya está instalado
-
-## Instalar Git
-
-### Windows
+### Instalación Windows
 
 Instala [Git para Windows](https://gitforwindows.org/).  
 Durante la instalación sólo debes prestar atención a dos detalles:  
-* Asegurate de marcar la opción "Use Git from the Windows Command Prompt".  
-* Para asegurar el correcto funcionamiento de R Studio y Git es preferible instalar Git en el siguiente directorio:
+*   Asegurate de marcar la opción "Use Git from the Windows Command Prompt".  
+*   Para asegurar el correcto funcionamiento de R Studio y Git es preferible instalar Git en el siguiente directorio:
 `C:/ProgramFiles/`  
 Deberías obtener algo así:
 `C:/ProgramFiles/Git/bin/git.exe`  
 
-### Mac OS
+### Instalación Mac OS
 **Opcion 1**. Instala `Xcode command line tools`, donde viene incluido Git. Si tu OS es anterior a 10.11 El Capitan probablemente tendrás que instalar `Xcode command line tools` obligatoriamente para que R Studio y Git puedan comunicarse.  
 
 En la linea de comandos ejecuta la siguiente linea:  
@@ -50,7 +42,7 @@ Si llegas a actualizar el sistema operativo de tu Mac, es posible que necesites 
 **Opcion 2**. Instala [Homebrew](http://brew.sh/) y luego ejectua esta linea de código en la terminal:
 `brew install git`
 
-### Linux
+### Instalación Linux
 
 Ubuntu o Debian Linux:  
 `sudo apt-get install git`  
