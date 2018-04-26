@@ -15,7 +15,11 @@ Git permite llevar registro y control sobre los cambios que realizamos sobre un 
 
 ## Cuenta GitHub
 
-Primero partiremos creando una cuenta gratis en [GitHub](http://github.com). Necesitaremos un nombre de usuario, un correo electrónico y una contraseña.
+Primero partiremos creando una cuenta gratis en [GitHub](http://github.com). Necesitaremos:  
+  
+- nombre de usuario  
+- correo electrónico  
+- contraseña  
 
 ## Instalación Git
 
@@ -67,33 +71,37 @@ Dado que las dos primeras lineas no imprimirán nada en la consola, la tercera l
 
 ## Conectando con GitHub  
 
+Esta parte tiene por objetivo ver si pueden hacer pull y push de GitHub a sus computadores.
+
 ### Crea un repositorio en GitHub  
 
-Asegurate de haber ingresado a tu cuenta en https://github.com.  
-Presiona el botón "New repository", o, si estás en la página de tu perfil, debes ir a "Repositories" y luego "New".  
+Asegurate de haber ingresado a tu cuenta en [GitHub](https://github.com).  
+Crea un nuevo repositorio presionando el botón verde "New repository", o, si estás en la página de tu perfil, debes ir a "Repositories" y luego "New".  
+
 El nombre del repositorio será: `newrepo`. Además marcaremos la opción "Initialize this repository with a README". Para crear el repositorio seleccionamos "Create repository".  
 
-Para usar este repositorio de forma local vamos a copiar la dirección HTTPS presionando el botón verde "Clone or Download".
+Para usar este repositorio de forma local vamos a copiar la dirección HTTPS presionando el botón verde "Clone or Download". Ahí debería aparecer una dirección que comienza con `https://`. Si en cambio aparece una dirección que comienza con `git@github.com`, presiona en la esquina superior derecha donde dice `Use HTTPS`.
+
 
 ### Clona el repositorio a un computador local
 
 Escoge una carpeta donde quieres ubicar tu repositorio y asegurate de encontrarte en esa carpeta desde la consola. Puedes usar `pwd` en la consola para saber en que carpeta de encuentras. Para ir de una carpeta a otra puedes utilizar `cd` (por ejemplo `cd ~/Documentos`).
 
-Para clonar el repositorio usaremos el enlace que copiamos anteriormente y ejecutaremos el siguiente codigo en la consola:
+Para clonar el repositorio usaremos el enlace que copiamos anteriormente y ejecutaremos el siguiente codigo en la consola:  
 `git clone enlace_al_repositorio`  
-Debería verse algo parecido a esto:  
-`git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git`  
+En mi caso el comando se ve así:  
+`git clone https://github.com/nik0lai/newrepo.git`  
 
 Al correr la linea (si todo sale bien) deberían ver algo así en la consola.
 
-[replace this with own example]  
-`nicolas@gitwithr tmp $ git clone https://github.com/jennybc/myrepo.git`  
-`Cloning into 'myrepo'...`  
-`remote: Counting objects: 3, done.`  
-`remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0`  
-`Unpacking objects: 100% (3/3), done.`  
-`Checking connectivity... done.`  
+```
+Cloning into 'myrepo'...
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+Checking connectivity... done.
 
+```
 ### Cambio, commit y push
 
 Estas son las tres acciones que realizarás la mayor cantidad de veces cuando trabajes con Git.  
