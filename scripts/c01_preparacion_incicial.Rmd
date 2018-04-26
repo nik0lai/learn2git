@@ -109,25 +109,98 @@ Para ilustrar estas acciones vamos a agregar una linea de texto al archivo READM
 
 `echo "Escribí este linea localmente desde mi computador" >> README.md`  
 
-Tambien, pueden simplementa abrir el archivo con algún procesador de texto (como gedit, notepad, etc.), agregar una linea de texto manualmente y guardar el archivo.
+Tambien, pueden simplementa abrir el archivo con algún procesador de texto (como gedit, notepad, etc.), agregar una linea de texto manualmente al final del documento y guardar el archivo.
 
-Siempre que hagamos cambios en los archivos que se encuentran dentro del repositorio podremos ver que archivos han sido modificados utilizando `git status` en la consola.  
+Siempre que hagamos cambios en los archivos que se encuentran dentro del repositorio podremos ver qué archivos han sido modificados utilizando `git status` en la consola.  
 
-En la consola debería aparecer algo así:
-`ejemplo consola de git status`  
+En la consola debería aparecer algo así:  
+```
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
 
 Ahora haremos commit a nuestro cambio y lo pushearemos (subiremos) al repositorio remoto que se encuentra en GitHub.  
-Primero agregaremos los archivos que queremos agregar a nuestro commit:  
-`git add nombre_archivo`  
-Luego haremos el commit:  
-`git commit -m "Commit hecho desde mi computadora local"`  
-Por último, pushearemos el commit:  
-`git push`
+Primero agregaremos los archivos que queremos agregar a nuestro commit, luego haremos commit, y por último, pushearemos el commit:  
 
-En este ejemplo `-m` es un indicador (o flag) que indica que lo que viene a continuación es un mesaje que será incluido como etiqueta del commit. Git requiere que cada commit tenga un mensaje que indique información sobre los cambios asociados al commit. Si olvidas agregar `-m` a `git commit` git solicitará mediante una terminal de texto un mensaje para el commit.  
-Los mensajes asociados a los commit debieran dar información clara y concisa sobre los cambios que incluye el commit. Estos mensajes debieran ser claros para ti en el futuro y para otros colaboradores.
+```
+git add README.md  
+git commit -m "Commit hecho desde mi ordenadora local"  
+git push origin master  
+```
+
+En este ejemplo `-m` es un indicador (o flag) que indica que lo que viene a continuación es un mensaje que será incluido como etiqueta del commit. Git requiere que cada commit tenga un mensaje que indique información sobre los cambios asociados al commit. Si olvidas agregar `-m` a `git commit` git solicitará mediante una terminal de texto un mensaje para el commit.  
+
+Los mensajes asociados a los commit deben dar información clara y concisa sobre los cambios que incluye el commit. Estos mensajes debieran ser claros para ti en el futuro y para otros colaboradores.
 
 ### Han llegado mis cambios y commits al repositorio remoto en GitHub?
 
-En tu explorar de internet entra a tu repositorio en GitHub. Ahí deberías ver la línea que hemos ingresado localmente en nuestro computador ("Escribí este linea localmente desde mi computador").  
-Si seleccionas "commits" puedes que habrá un commit con el mensaje que hemos ingresado en la consola al hacer commit ("Commit hecho desde mi computadora local").
+En tu explorar de internet entra a tu repositorio en [GitHub](https://github.com). Ahí deberías ver la línea que hemos ingresado localmente en nuestro computador ("Escribí este linea localmente desde mi computador").  
+Si seleccionas "commits" verás un commit con el mensaje que hemos ingresado en la consola al hacer commit ("Commit hecho desde mi computadora local").
+
+## Configuración de credenciales
+
+Para evitar escribir el nombre de usuario y la contraseña cada vez que nos conectamos podemos almacenar nuestra información en cache. Utilizaremos HTTPS (no llaves SSH) debido a que su configuración es mucho más simple y es el método de autenticación recomendado por GitHub.
+
+Para almacenar la información en cache necesitamos un repositorio que exista local y remotamente, por lo que usaremos el repositorio que hemos creado.
+
+### Git credential helper
+
+Con el siguiente comando en la terminal podemos revisar si el git instalado es lo suficientemente nuevo para tener `credential helper`.
+```
+git --version
+```
+### Activa el credential helper
+
+#### Windows
+
+En la consola ejecuta el siguiente comando:  
+```
+git config --global credential.helper wincred
+```
+
+#### Mac
+
+En la consola ejecuta el siguiente comando:  
+```
+git credential-osxkeychain
+```
+Deberías ver algo así:
+```
+git credential-osxkeychain
+```
+
+#### Linux
+
+En la consola ejecuta el siguiente comando:
+```
+git config --global credential.helper 'cache --timeout=10000000'
+```
+
+### Haz que Git te pida tu usuario y contraseña
+
+Para hacer que Git nos pida nuestros datos tendremos que hacer un cambio, un commit, e intentar hacer push a ese commit. Las siguientes lineas harán el trabajo:
+
+```
+echo "nueva linea!" >> README.md
+git add -A
+git commit -m "nuevo commit desde mi computador"
+git push -u origin master
+```
+
+Si todo sale bien, git nos pedirá nuestros datos por última vez. Puedes cerciorarte si los cambios han tenido efecto ejecutando las siguientes lineas.
+
+```
+echo "OTRA nueva linea!" >> README.md
+git add -A
+git commit -m "OTRO nuevo commit desde mi computador"
+git push origin master
+```
+
+Si Git no te ha pedido tus datos esta vez puedes declararte victorioso.
