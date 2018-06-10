@@ -1,14 +1,17 @@
-# Repositorio local a través de R Project
+# Repositorio local utilizando un R Project
 
 Sacado de Curating Research...
 
 ### ¿Qué es un repositorio?
 
+Un repositorio es simplemente el lugar donde almacenaremos los documentos, recursos como imágenes, scripts de códigos, datos, resultados, y en general cualquier recurso de un proyecto. 
+
+En la sección sobre GitHub veremos cómo configurar un repositorio remoto al que podremos acceder desde cualquier parte, y que además estará disponible para cualquier persona si así lo deseamos. Por ahora trabajaremos con un repositorio local.
+
 ### Crear Proyecto en RStudio
 
-Para crear un proyecto vamos a  `File > New Project`, esto abrirá un cuadro de diálogo preguntando si queremos crear un proyecto en un nuevo directorio, en un directorio que ya existe, o recuperar un proyecto de un directorio que ya tiene control de versión. En este caso crearemos un nuevo directorio, así que le damos `New Directory` y luego a `New Project`.  
+Para crear un proyecto en RStudio iremos a  `File > New Project`, esto abrirá un cuadro de diálogo preguntando si queremos crear un proyecto en un nuevo directorio, en un directorio que ya existe, o recuperar un proyecto de un directorio que ya tiene control de versión. En este caso crearemos un nuevo directorio, así que seleccionaremos `New Directory` y luego a `New Project`.  
 
-HACER GRILLA CON DOS PRIMERAS IMAGENES  
 ![**Fig. 2.** Ventana para crear nuevo proyecto (1)](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/create_project_01.png)
 
 ![**Fig. 3.** Ventana para crear nuevo proyecto (2)](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/create_project_02.png)
@@ -17,9 +20,9 @@ Tendremos que darle un nombre al proyecto y elegir un directorio para ubicar la 
 
 ![**Fig. 4.** Ventana para crear nuevo proyecto (3)](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/create_project_03.png)
 
-Una vez que le demos a `Create Project` se creará la carpeta en la dirección que hemos escogido y dos archivos en su interior:  
+Después de seleccionar `Create Project` se creará la carpeta en la dirección que hemos escogido y dos archivos en su interior:  
 
 - `.gitignore`, y   
 - `repositorio-ejemplo.Rproj` (`repositorio-ejemplo` es el nombre que le has dado al proyecto)  
 
-`repositorio-ejemplo.Rproj` es un archivo de texto plano (sin formato) que contiene la configuración del proyecto (puedes cambiar la configuración en `Tools > Project Options` en RStudio).  
+`repositorio-ejemplo.Rproj` es un archivo de texto plano (sin formato) que contiene la configuración del proyecto (puedes cambiar la configuración en `Tools > Project Options` en RStudio).
