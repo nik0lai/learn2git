@@ -1,0 +1,31 @@
+# Instalación Git
+
+Es posible que ya tengas Git, pero instalar la última versión es una buena práctica y nos ahorrará problemas futuros.
+
+## Instalación Windows y Mac
+
+Pueden descargar el instalador de Git en <https://git-scm.com/download/mac> si usan Mac, o en <https://git-scm.com/download/win> si utilizan Windows. Una vez descargado el archivo, pueden instalarlo como instalarían cualquier otro programa.
+
+## Instalación Linux
+
+Para instalar Git en Ubuntu deben ejecutar las siguientes lineas en la terminal:
+`sudo apt-get install git`  
+
+Para otras distribuciones Linux pueden visitar la siguiente página: <https://git-scm.com/download/linux>.
+
+# Git y tu, el primer encuentro
+
+Para que Git sepa quien eres y pueda registrar tus acciones bajo tu nombre, es necesario decirle quien eres, junto con otra información. En la consola (ver 099_terminal) ejecuta las siguientes lineas (substituye nombre e email con tu información y ejecuta una linea a la vez):
+
+`git config --global user.name 'Nicolas Sanchez'`  
+`git config --global user.mail 'nicolas.csanchez@gmail.com'`  
+`git config --global --list`  
+
+Puedes acceder a la consola desde R Studio en _Tools > Terminal > New Terminal_ o _Tools > Shell_.
+Adicionalmente, si tienes Windows y tienes problemas con los comandos `git config` considera que existen distintos tipos de consolas y puede que estés en la incorrecta. En la barra superior debería decir `MSYS` o `MINGW64`, no `cmd.exe`.
+
+Ten en cuenta que los commits que hagas llevarán el nombre de usuario que escojas, por lo que debería ser informativo para otras personas que trabajen contigo.  
+
+Dado que las dos primeras lineas no imprimirán nada en la consola, la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores (**Fig. 1.**).
+
+![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](/home/nicolas/Asgard/ERRE/learn2git/docs/img/config_git.png)
