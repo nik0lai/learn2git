@@ -28,4 +28,4 @@ Ten en cuenta que los commits que hagas llevarán el nombre de usuario que escoj
 
 Dado que las dos primeras lineas no imprimirán nada en la consola, la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores (**Fig. 1.**).
 
-![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](/home/nicolas/Asgard/ERRE/learn2git/docs/img/config_git.png)
+![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/config_git.png)
