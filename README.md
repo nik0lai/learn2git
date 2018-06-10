@@ -1,9 +1,4 @@
----
-title: "README"
-author: ""
-date: "June 10, 2018"
-output: html_document
----
+# Learn2Git
 
 Este repositorio contiene contiene un curso introductorio y medio-ish a Git. El curso puede ser seguido (idealmente) en su totalidad, o bien sus capítulos pueden ser usados de forma aislada (ya que estos están autocontenidos).
 
