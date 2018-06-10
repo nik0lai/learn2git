@@ -1,13 +1,21 @@
 ---
 title: "Git y tu, una historia de amor"
-author: "NSF"
-date: "April 8, 2018"
 output: html_document
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
+
+
+
+
+
+
+
+
 
 ## Git y Github, otra historia de amor.
 
@@ -17,57 +25,11 @@ Git permite llevar registro y control sobre los cambios que realizamos sobre un 
 
 Primero partiremos creando una cuenta gratis en [GitHub](http://github.com). Necesitaremos:  
   
-- nombre de usuario  
-- correo electrónico  
-- contraseña  
+- Nombre de usuario  
+- Correo electrónico  
+- Contraseña  
 
-## Instalación Git
 
-### Cruza los dedos y revisa si Git ya está instalado
-
-### Instalación Windows
-
-Instala [Git para Windows](https://gitforwindows.org/).  
-Durante la instalación sólo debes prestar atención a dos detalles:  
-*   Asegurate de marcar la opción "Use Git from the Windows Command Prompt".  
-*   Para asegurar el correcto funcionamiento de R Studio y Git es preferible instalar Git en el siguiente directorio:
-`C:/ProgramFiles/`  
-Deberías obtener algo así:
-`C:/ProgramFiles/Git/bin/git.exe`  
-
-### Instalación Mac OS
-**Opcion 1**. Instala `Xcode command line tools`, donde viene incluido Git. Si tu OS es anterior a 10.11 El Capitan probablemente tendrás que instalar `Xcode command line tools` obligatoriamente para que R Studio y Git puedan comunicarse.  
-
-En la linea de comandos ejecuta la siguiente linea:  
-`xcode-select -- install`  
-
-Si llegas a actualizar el sistema operativo de tu Mac, es posible que necesites ejecutar nuevamnete la linea anterior y/o aceptar nuevamente la licencia de Xcode.
-
-**Opcion 2**. Instala [Homebrew](http://brew.sh/) y luego ejectua esta linea de código en la terminal:
-`brew install git`
-
-### Instalación Linux
-
-Ubuntu o Debian Linux:  
-`sudo apt-get install git`  
-
-Fedora o RedHat Linux:  
-`sudo yum install git`  
-
-## Configura Git
-
-En la consola ejecuta las siguientes lineas (substituye nombre e email con tu información y ejecuta una linea a la vez):
-
-`git config --global user.name 'Nicolas Sanchez'`
-`git config --global user.mail 'nicolas.csanchez@gmail.com'`
-`git config --global --list`  
-
-Puedes acceder a la consola desde R Studio en Tools > Terminal o Tools > Shell.
-Adicionalmente, si tienes Windows y tienes problemas con los comandos `git config` considera que existen distintos tipos de consolas y puede que estés en la incorrecta. En la barra superior debería decir `MSYS` o `MINGW64`, no `cmd.exe`.
-
-En cuanto al nombre de usuario, este no tiene que ser necesariamente igual que el nombre de tu cuenta GitHub. Los commits que hagas llevarán este nombre, por lo que debería ser informativo para otras personas que trabajen contigo.  
-En cuanto al email, este debe ser el email de tu cuenta GitHub.  
-Dado que las dos primeras lineas no imprimirán nada en la consola, la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores.
 
 ## Conectando con GitHub  
 
