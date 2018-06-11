@@ -35,6 +35,4 @@ vignettes/*.pdf
 *.Rproj
 *.html
 docs/non-plain/
-
-# Book files
-book-docs
+_book/
