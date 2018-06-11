@@ -35,6 +35,3 @@ vignettes/*.pdf
 *.Rproj
 *.html
 docs/non-plain/
-
-# Book deploy
-_book/
