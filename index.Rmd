@@ -1,14 +1,8 @@
 --- 
 title: "Learn2Git. Introducción a Git y Github"
 author: ""
-date: "`r Sys.Date()`"
-site: bookdown::bookdown_site
+site: "bookdown::bookdown_site"
 output: bookdown::gitbook
-documentclass: book
-biblio-style: apalike
-link-citations: yes
-github-repo: rstudio/bookdown-demo
-description: "Curso de Git"
 ---
 
 # Sobre Learn2Git
