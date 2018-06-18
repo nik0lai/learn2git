@@ -8,7 +8,7 @@ Ahora que tu proyecto tiene una descripción supon que quieres guardar un artíc
 
 Toma el archivo PDF de la carpeta `Recursos` y agrégalo a la carpeta en la que has creado tu proyecto. El archivo aparecerá en tu panel Git, pero si vas a la ventana donde realizas `Commit` y seleccionas el archivo verás que no hay cambios ni contenido en la mitad inferior de la ventana.
 
-![**Fig. 11.** Panel Git: Ventana Commit](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/gitignore_02.png)
+![**Fig. 11.** Panel Git: Ventana Commit](docs/non-plain/img/gitignore_02.png)
 
 Dado que Git no será capaz de rastrear los cambios hechos en este tipo de archivos, podemos indicarlos para que sean ignorados y no aparezcan en el panel Git. Esto significa que si son modificados Git ignorará los cambios.
 
@@ -16,7 +16,7 @@ Dado que Git no será capaz de rastrear los cambios hechos en este tipo de archi
 
 Git utiliza un archivo de texto plano especial para llevar el registro de qué archivos deben ser ignorados. Este archivo se llama `.gitignore` y por defecto se encuentra oculto al usuario (puedes verlo en el panel `Files` de RStudio). RStudio creó este archivo automáticamente cuando creaste el proyecto.
 
-![**Fig. 12.** Panel Git: Ventana Commit](/home/nicolas/Asgard/ERRE/learn2git/docs/non-plain/img/gitignore_03.png)
+![**Fig. 12.** Panel Git: Ventana Commit](docs/non-plain/img/gitignore_03.png)
 
 Este archivo tendrá algo como esto en su interior:  
 
