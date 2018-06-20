@@ -4,7 +4,7 @@
 
 Si hemos hecho todo bien hasta ahora podremos ver el panel Git en la sección superior derecha de RStudio. En este panel aparecen los archivos que mencionamos antes y los botones con los principales comandos de Git.
 
-![**Fig. 5.** Panel Git: Nuevo proyecto](docs/non-plain/img/panel_git_01.png)
+![**Fig. 5.** Panel Git: Nuevo proyecto](./docs/non-plain/img/panel_git_01.png)
 
 ## Commit
 
@@ -20,13 +20,13 @@ Haremos el primer ``commit`` de nuestro proyecto para registrar su estado inicia
 
 Podemos ver los archivos que registran cambios en el panel de Git. Para ver los cambios de forma más detallada seleccionaremos `Commit` en el panel de Git. Se abrirá otra ventana donde podrás seleccionar los archivos con cambios. En este caso, **los archivos que se crearon nuestro proyecto tendrán dos signos de interrogación amarillos**, esto significa que son archivos nuevos y que los cambios aun no están siendo seguidos por Git.
 
-![**Fig. 6.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_02.png)
+![**Fig. 6.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_02.png)
 
 ### ¿Qué voy a incluir en el commit?
 
 Dado que nuestro objetivo es registrar el estado inicial de nuestro proyecto, seleccionaremos los dos archivos que se han creado con nuestro proyecto. Para incluirlos en el ``commit`` debemos llevarlos al `Stage`, para esto marcamos la casilla de la columna `Staged` junto al nombre de cada archivo. **Al hacer esto el estatus cambiará a una A verde**. Adicionalmente, al seleccionar los archivos, en la parte inferior de la ventana podrás ver las lineas que han cambiado. Las lineas verdes son aquellas que se han creado. En este caso todas las lineas son verdes ya que ambos archivos son nuevos.
 
-![**Fig. 7.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_03.png)
+![**Fig. 7.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_03.png)
 
 ### Commit!
 
@@ -34,7 +34,7 @@ Ahora que hemos seleccionado los archivos podemos crear un ``commit`` que quedar
 
 Una vez que le des a `Commit` una ventana con el resumen de los cambios que has incluido en el ``commit`` aparecerá. Enesta ventana podrás ver que 2 archivos cambiaron, y que estos cambios consisten en 17 lineas que fueron insertadas (_2 files changed, 17 insertions(+)_).
 
-![**Fig. 8.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_04.png)
+![**Fig. 8.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_04.png)
 
 ### Por favor README!
 
@@ -49,7 +49,7 @@ Crearemos este nuevo archivo seleccionando `File > New File > Text File` en RStu
 
 El nuevo archivo aparecerá en el panel Git con signos de interrogación amarillos junto al nombre (recuerda, dos signos de interrogación amarillos indican archivos nuevos). Ahora puedes escribir una descripción en el archivo `README` que has creado y guardarlo nuevamente.
 
-![**Fig. 8.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_05.png)
+![**Fig. 8.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_05.png)
 
 Una vez que hayas terminado la descripción de tu proyecto, guarda el archivo y en el panel de Git llevalo al `Stage`, escribe un mensaje para tu commit, y selecciona `Commit` para registrar la forma inicial de tu archivo `README` en la historia Git de tu proyecto.
 
@@ -61,7 +61,7 @@ Git registrará cualquier cambio que hagas a los archivos que has incluido en lo
 
 Abre el archivo `README`, agrega una linea al final y guarda el archivo. En el panel Git el `Status` del archivo `README` cambiará a una **M de color azul**, esto significa `Modificado` (modified). Para ver cuál fue la modificación selecciona `Commit` en el panel Git y luego selecciona el archivo que has modificado. En la parte inferior de la ventana podrás ver las nuevas lineas resaltadas con verde y las lineas antiguas (las que ya no existen) resaltadas con rojo.  
 
-![**Fig. 9.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_06.png)
+![**Fig. 9.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_06.png)
 
 Cuando estés satisfecho crea un ``commit`` con los cambios que has hecho en en `README`. Recuerda agregar un mensaje al ``commit`` que sea distinto a los anteriores.  
 
@@ -73,4 +73,4 @@ Si aun estás en la ventana donde creaste el ``commit`` selecciona `History` en 
 
 La mitad superior de la ventana muestra los commits, el autor, la fecha y una llave SHA (este es un identificador único para cada commit). La mitad inferior muestra los cambios hechos en cada commit.
 
-![**Fig. 10.** Panel Git: Ventana Commit](docs/non-plain/img/panel_git_07.png)
+![**Fig. 10.** Panel Git: Ventana Commit](./docs/non-plain/img/panel_git_07.png)
