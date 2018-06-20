@@ -43,8 +43,8 @@ Puedes acceder a la ``terminal`` desde ``RStudio`` en _Tools > Terminal > New Te
 
 Ten en cuenta que los commits que hagas llevarán el nombre de usuario que escojas, por lo que debería ser informativo para otras personas que trabajen contigo.
 
-```{r}
-knitr::include_graphics("docs/non-plain/img/config_git.png")
+```{r, results='asis'}
+knitr::include_graphics(paste0(getwd(), "/docs/non-plain/img/config_git.png"))
 ```
 
 
