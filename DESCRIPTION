@@ -1,7 +1,0 @@
-Package: happygitwithr
-Title: Happy Git and GitHub for the useR
-Version: 0.0.0.1
-Imports:
-  bookdown
-Remotes:
-  rstudio/bookdown
