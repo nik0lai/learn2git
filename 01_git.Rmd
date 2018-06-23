@@ -39,7 +39,7 @@ git config --global --list
 Puedes acceder a la ``terminal`` desde ``RStudio`` en _Tools > Terminal > New Terminal_ o _Tools > Shell_.
 <!-- Adicionalmente, si tienes Windows y tienes problemas con los comandos `git config` considera que existen distintos tipos de consolas y puede que estés en la incorrecta. En la barra superior debería decir `MSYS` o `MINGW64`, no `cmd.exe`. -->
 
-![**Fig. 0** Terminal en RStudio](./docs/non-plain/img/rstudio_terminal.png)
+![**Fig. 0** Terminal en RStudio](docs/non-plain/img/rstudio_terminal.png)
 
 Ten en cuenta que los commits que hagas llevarán el nombre de usuario que escojas, por lo que debería ser informativo para otras personas que trabajen contigo.
 
@@ -51,4 +51,4 @@ knitr::include_graphics(here("docs", "non-plain", "img", "config_git.png"))
 
 Las dos primeras lineas no imprimirán nada en la ``terminal`` (es decir, al ejecutarlas no recibirás una respuesta), la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores (**Fig. 1.**).
 
-![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](./docs/non-plain/img/config_git.png)
+![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](docs/non-plain/img/config_git.png)
