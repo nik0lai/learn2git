@@ -43,12 +43,6 @@ Puedes acceder a la ``terminal`` desde ``RStudio`` en _Tools > Terminal > New Te
 
 Ten en cuenta que los commits que hagas llevarán el nombre de usuario que escojas, por lo que debería ser informativo para otras personas que trabajen contigo.
 
-```{r}
-library(here)
-knitr::include_graphics(here("docs", "non-plain", "img", "config_git.png"))
-```
-
-
 Las dos primeras lineas no imprimirán nada en la ``terminal`` (es decir, al ejecutarlas no recibirás una respuesta), la tercera linea (`git config --global --list`) imprimirá el nombre y correo electrónico que escogiste en las dos lineas anteriores (**Fig. 1.**).
 
 ![**Fig. 1.** Terminal luego de ejecutar  `git config --global --list`](docs/non-plain/img/config_git.png)
