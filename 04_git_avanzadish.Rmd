@@ -1,0 +1,65 @@
+# Git avanzado-_ish_
+
+de Curating research
+
+### Ignorar archivos
+
+Ahora que tu proyecto tiene una descripción supon que quieres guardar un artículo en un archivo PDF. Git funciona siguiendo los cambios de archivos de texto plano, por ejemplo, archivo _.txt_ con la descripción del proyecto. Las modificaciones hechas en cualquier archivo binario, por ejemplo, cualquier archivo creado con Microsoft Office, imágenes, PDFs, etc., no serán seguidas por Git.  
+
+Toma el archivo PDF de la carpeta `Recursos` y agrégalo a la carpeta en la que has creado tu proyecto. El archivo aparecerá en tu panel Git, pero si vas a la ventana donde realizas `Commit` y seleccionas el archivo verás que no hay cambios ni contenido en la mitad inferior de la ventana.
+
+![**Fig. 11.** Panel Git: Ventana Commit](docs/non-plain/img/gitignore_02.png)
+
+Dado que Git no será capaz de rastrear los cambios hechos en este tipo de archivos, podemos indicarlos para que sean ignorados y no aparezcan en el panel Git. Esto significa que si son modificados Git ignorará los cambios.
+
+### .gitignore  
+
+Git utiliza un archivo de texto plano especial para llevar el registro de qué archivos deben ser ignorados. Este archivo se llama `.gitignore` y por defecto se encuentra oculto al usuario (puedes verlo en el panel `Files` de RStudio). RStudio creó este archivo automáticamente cuando creaste el proyecto.
+
+![**Fig. 12.** Panel Git: Ventana Commit](docs/non-plain/img/gitignore_03.png)
+
+Este archivo tendrá algo como esto en su interior:  
+
+```
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+```
+
+Cada linea contiene la ruta a un archivo específico, una carpeta, o un patrón que Git debe ignorar. Estas cuatro lineas son agregadas automáticamente por RStudio.  
+
+A _grosso modo_, hay tres formas en las que podríamos ignorar archivos PDF (y cualquier otro tipo de archivo). Podríamos agregar alguna de las tres lineas siguientes al final del archivo `.gitignore`.  
+
+
+- `benedeke2010.pdf`: indicando el nombre para ignorar el archivo en particular.  
+- `*.pdf`: indicando la extensión del archivo para ignorar cualquier archivo con esa extensión que se encuentre en cualquier carpeta del repositorio. 
+- `docs_pdf/*`: indicando una carpeta donde almacenaremos los archivos que deben ser ignorados.  
+
+Elijan cualquiera de estas tres opciones y agregenla al final de `.gitignore`. Deberían quedar con algo así:  
+
+```
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.pdf
+```
+
+Tras hacer esto en el panel de Git veremos que el archivo `.gitignore` ha sido modificado y que el archivo PDF ya no se encuentra (porque ha sido ignorado por Git). Haz un commit para registrar el cambio a `.gitignore`.
+
+Recuerda que las rutas a los archivos o carpetas deben ser relativas al directorio de trabajo del proyecto. En este caso mi directorio de trabajo es `/home/nicolas/learn2git/`. Si el archivo PDF estuviera en la carpeta `docs_pdf/` y quisieramos ignorar exclusivamente ese archivo, tendriamos que agregar una linea como la siguiente:  
+
+- `docs_pdf/benedeke2010.pdf`
+
+#### ¿Qué archivos ignorar?
+
+En general, es buena idea ignorar cualquier archivo que no sea texto plano como los archivos con extensión `.txt`, `.doc`, `.docx`, `.xls`, `.png`, `.jpg`, etc. Otra buena idea es ignorar los archivos que son generados automáticamente por nuestro código.
+
+### Acceder a versiones pasadas de archivos
+
+Una de las funcionalidades más importantes de Git es acceder a versiones pasades de los archivos en un proyecto, o incluso del proyecto entero.  
+
+Sin embargo, la funcionalidad de Git en RStudio es algo limitada. Si queremos acceder a la versión anterior de un archivo podemos ir al historial de Commits (en el panel Git vamos a `Commit` y luego a `History`). Allí podemos seleccionar cualquier commit y en la esquina superior derecha del cuadro inferior seleccionaremos `View file @ [código SHA del commit]`. El código SHA de un commit es su identigicador único.  
+
+Veremos cómo recuperar la versión anterior de un archivo, e incluso del proyecto en su totalidad, cuando veamos como usar Git a través de la terminal.
