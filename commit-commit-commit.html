@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn2Git. Introducción a Git y Github</title>
+  <meta name="description" content="Learn2Git. Introducción a Git y Github">
+  <meta name="generator" content="bookdown 0.7.13 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Learn2Git. Introducción a Git y Github" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Learn2Git. Introducción a Git y Github" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="repositorio-local-utilizando-un-r-project.html">
+<link rel="next" href="git-avanzado-ish.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre Learn2Git</a></li>
+<li class="chapter" data-level="2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html"><i class="fa fa-check"></i><b>2</b> R y RStudio</a><ul>
+<li class="chapter" data-level="2.1" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#por-que-rstudio"><i class="fa fa-check"></i><b>2.1</b> ¿Por qué RStudio?</a></li>
+<li class="chapter" data-level="2.2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#instalacion-r-y-rstudio"><i class="fa fa-check"></i><b>2.2</b> Instalación <code>R</code> y <code>RStudio</code></a><ul>
+<li class="chapter" data-level="2.2.1" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#ya-tengo-rstudio"><i class="fa fa-check"></i><b>2.2.1</b> Ya tengo RStudio</a></li>
+<li class="chapter" data-level="2.2.2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#no-tengo-rstudio"><i class="fa fa-check"></i><b>2.2.2</b> No tengo RStudio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="instalacion-git.html"><a href="instalacion-git.html"><i class="fa fa-check"></i><b>3</b> Instalación Git</a><ul>
+<li class="chapter" data-level="3.1" data-path="instalacion-git.html"><a href="instalacion-git.html#instalacion-windows-y-mac"><i class="fa fa-check"></i><b>3.1</b> Instalación Windows y Mac</a></li>
+<li class="chapter" data-level="3.2" data-path="instalacion-git.html"><a href="instalacion-git.html#instalacion-linux"><i class="fa fa-check"></i><b>3.2</b> Instalación Linux</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="git-y-tu-el-primer-encuentro.html"><a href="git-y-tu-el-primer-encuentro.html"><i class="fa fa-check"></i><b>4</b> Git y tu, el primer encuentro</a></li>
+<li class="chapter" data-level="5" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html"><i class="fa fa-check"></i><b>5</b> Repositorio local utilizando un R Project</a><ul>
+<li class="chapter" data-level="5.0.1" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html#que-es-un-repositorio"><i class="fa fa-check"></i><b>5.0.1</b> ¿Qué es un repositorio?</a></li>
+<li class="chapter" data-level="5.0.2" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html#crear-proyecto-en-rstudio"><i class="fa fa-check"></i><b>5.0.2</b> Crear Proyecto en RStudio</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html"><i class="fa fa-check"></i><b>6</b> Commit, commit, commit</a><ul>
+<li class="chapter" data-level="6.1" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#panel-git-en-rstudio"><i class="fa fa-check"></i><b>6.1</b> Panel Git en RStudio</a></li>
+<li class="chapter" data-level="6.2" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#commit"><i class="fa fa-check"></i><b>6.2</b> Commit</a></li>
+<li class="chapter" data-level="6.3" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#primer-commit"><i class="fa fa-check"></i><b>6.3</b> Primer <code>commit</code></a><ul>
+<li class="chapter" data-level="6.3.1" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#que-ha-cambiado"><i class="fa fa-check"></i><b>6.3.1</b> ¿Qué ha cambiado?</a></li>
+<li class="chapter" data-level="6.3.2" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#que-voy-a-incluir-en-el-commit"><i class="fa fa-check"></i><b>6.3.2</b> ¿Qué voy a incluir en el commit?</a></li>
+<li class="chapter" data-level="6.3.3" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#commit-1"><i class="fa fa-check"></i><b>6.3.3</b> Commit!</a></li>
+<li class="chapter" data-level="6.3.4" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#por-favor-readme"><i class="fa fa-check"></i><b>6.3.4</b> Por favor README!</a></li>
+<li class="chapter" data-level="6.3.5" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#crea-un-nuevo-archivo"><i class="fa fa-check"></i><b>6.3.5</b> Crea un nuevo archivo</a></li>
+<li class="chapter" data-level="6.3.6" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#cambia-todo-cambia"><i class="fa fa-check"></i><b>6.3.6</b> Cambia, todo cambia</a></li>
+<li class="chapter" data-level="6.3.7" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#historial-de-commits"><i class="fa fa-check"></i><b>6.3.7</b> Historial de <code>commits</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html"><i class="fa fa-check"></i><b>7</b> Git avanzado-<em>ish</em></a><ul>
+<li class="chapter" data-level="7.0.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#ignorar-archivos"><i class="fa fa-check"></i><b>7.0.1</b> Ignorar archivos</a></li>
+<li class="chapter" data-level="7.0.2" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#gitignore"><i class="fa fa-check"></i><b>7.0.2</b> .gitignore</a></li>
+<li class="chapter" data-level="7.0.3" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#acceder-a-versiones-pasadas-de-archivos"><i class="fa fa-check"></i><b>7.0.3</b> Acceder a versiones pasadas de archivos</a></li>
+<li class="chapter" data-level="7.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#la-terminal"><i class="fa fa-check"></i><b>7.1</b> La Terminal</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#que-es-la-terminal"><i class="fa fa-check"></i><b>7.1.1</b> Qué es la terminal?</a></li>
+<li class="chapter" data-level="7.1.2" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#iniciando-la-terminal"><i class="fa fa-check"></i><b>7.1.2</b> Iniciando la terminal</a></li>
+<li class="chapter" data-level="7.1.3" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#windows-la-manzana-podrida"><i class="fa fa-check"></i><b>7.1.3</b> Windows, la manzana podrida</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Learn2Git. Introducción a Git y Github</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="commit-commit-commit" class="section level1">
+<h1><span class="header-section-number">6</span> Commit, commit, commit</h1>
+<div id="panel-git-en-rstudio" class="section level2">
+<h2><span class="header-section-number">6.1</span> Panel Git en RStudio</h2>
+<p>Si hemos hecho todo bien hasta ahora podremos ver el panel Git en la sección superior derecha de RStudio. En este panel aparecen los archivos que mencionamos antes y los botones con los principales comandos de Git.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_01.png" alt="Fig. 5. Panel Git: Nuevo proyecto" />
+<p class="caption"><strong>Fig. 5.</strong> Panel Git: Nuevo proyecto</p>
+</div>
+</div>
+<div id="commit" class="section level2">
+<h2><span class="header-section-number">6.2</span> Commit</h2>
+<p>Hacer un <code>commit</code> es básicamente registrar los cambios hechos en el repositorio. Esto significa que git creará una especie de fotografía o registro del estado en que se encuentran todos los archivos al momento del <code>commit</code>. En la práctica, dado que muchas veces sólo algunos archivos cambiarán, Git registra solamente los archivos que cambian y asume que el resto se mantiene igual a su versión anterior.</p>
+<p>Los <code>commit</code> que hagas quedarán registrados en un historial donde podrás ver los cambios de cada archivo y que te permitirá volver a las versiones anteriores de los archivos o del proyecto completo si así lo deseas.</p>
+</div>
+<div id="primer-commit" class="section level2">
+<h2><span class="header-section-number">6.3</span> Primer <code>commit</code></h2>
+<p>Haremos el primer <code>commit</code> de nuestro proyecto para registrar su estado inicial. Cada vez que hagamos un <code>commit</code> tendrás que ver qué cambios has hecho, qué cambios quieres incluir en el commit, y realizar el commit.</p>
+<div id="que-ha-cambiado" class="section level3">
+<h3><span class="header-section-number">6.3.1</span> ¿Qué ha cambiado?</h3>
+<p>Podemos ver los archivos que registran cambios en el panel de Git. Para ver los cambios de forma más detallada seleccionaremos <code>Commit</code> en el panel de Git. Se abrirá otra ventana donde podrás seleccionar los archivos con cambios. En este caso, <strong>los archivos que se crearon nuestro proyecto tendrán dos signos de interrogación amarillos</strong>, esto significa que son archivos nuevos y que los cambios aun no están siendo seguidos por Git.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_02.png" alt="Fig. 6. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 6.</strong> Panel Git: Ventana Commit</p>
+</div>
+</div>
+<div id="que-voy-a-incluir-en-el-commit" class="section level3">
+<h3><span class="header-section-number">6.3.2</span> ¿Qué voy a incluir en el commit?</h3>
+<p>Dado que nuestro objetivo es registrar el estado inicial de nuestro proyecto, seleccionaremos los dos archivos que se han creado con nuestro proyecto. Para incluirlos en el <code>commit</code> debemos llevarlos al <code>Stage</code>, para esto marcamos la casilla de la columna <code>Staged</code> junto al nombre de cada archivo. <strong>Al hacer esto el estatus cambiará a una A verde</strong>. Adicionalmente, al seleccionar los archivos, en la parte inferior de la ventana podrás ver las lineas que han cambiado. Las lineas verdes son aquellas que se han creado. En este caso todas las lineas son verdes ya que ambos archivos son nuevos.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_03.png" alt="Fig. 7. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 7.</strong> Panel Git: Ventana Commit</p>
+</div>
+</div>
+<div id="commit-1" class="section level3">
+<h3><span class="header-section-number">6.3.3</span> Commit!</h3>
+<p>Ahora que hemos seleccionado los archivos podemos crear un <code>commit</code> que quedará en la historia de cambios de nuestro proyecto. Antes de seleccionar <code>Commit</code> tendremos que escribir un mensaje corto en la casilla bajo <code>Commit message</code>. Este mensaje debería decir de forma concisa qué ha cambiado y por qué. Intenta ser lo más claro y breve posible, ya que esto será fundamental cuando vuelvas a la historia de tu repositorio en busca de algún cambio en particular.</p>
+<p>Una vez que le des a <code>Commit</code> una ventana con el resumen de los cambios que has incluido en el <code>commit</code> aparecerá. Enesta ventana podrás ver que 2 archivos cambiaron, y que estos cambios consisten en 17 lineas que fueron insertadas (<em>2 files changed, 17 insertions(+)</em>).</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_04.png" alt="Fig. 8. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 8.</strong> Panel Git: Ventana Commit</p>
+</div>
+</div>
+<div id="por-favor-readme" class="section level3">
+<h3><span class="header-section-number">6.3.4</span> Por favor README!</h3>
+<p>Cada vez que crees un repositorio, o en general un proyecto, es bueno que lo acompañes de una breve descripción que indique el tema y cualquier información relevante para alguien que se enfrente a tu proyecto por primera vez. Si bien esto puede parecer innecesario si estás trabajando sólo, será de gran ayuda si por alguna dejas de trabajar en tu proyecto y lo retomas semanas o meses después. Mientras menos cosas dependan de tu memoria, menos cosas saldrán mal.</p>
+<p>Generalmente la descripción del proyecto se encuentra en un archivo <code>README</code>. Para que el archivo sea compatible con Git, crearemos un archivo de texto plano (.txt, no Microsoft Word ni similares).</p>
+</div>
+<div id="crea-un-nuevo-archivo" class="section level3">
+<h3><span class="header-section-number">6.3.5</span> Crea un nuevo archivo</h3>
+<p>Crearemos este nuevo archivo seleccionando <code>File &gt; New File &gt; Text File</code> en RStudio y lo guardaremos en la carpeta principal del proyecto que hemos creado, en mi caso:<br />
+<code>learn2git/README.txt</code></p>
+<p>El nuevo archivo aparecerá en el panel Git con signos de interrogación amarillos junto al nombre (recuerda, dos signos de interrogación amarillos indican archivos nuevos). Ahora puedes escribir una descripción en el archivo <code>README</code> que has creado y guardarlo nuevamente.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_05.png" alt="Fig. 8. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 8.</strong> Panel Git: Ventana Commit</p>
+</div>
+<p>Una vez que hayas terminado la descripción de tu proyecto, guarda el archivo y en el panel de Git llevalo al <code>Stage</code>, escribe un mensaje para tu commit, y selecciona <code>Commit</code> para registrar la forma inicial de tu archivo <code>README</code> en la historia Git de tu proyecto.</p>
+<p>Has creado tu segundo <code>commit</code> y Git ahora registrará los cambios que hagas en tu archivo <code>README</code>.</p>
+</div>
+<div id="cambia-todo-cambia" class="section level3">
+<h3><span class="header-section-number">6.3.6</span> Cambia, todo cambia</h3>
+<p>Git registrará cualquier cambio que hagas a los archivos que has incluido en los dos <code>commit</code> que has hecho hasta ahora. Los cambios siempre se registrán en comparación a la última versión que incluiste en un commit.</p>
+<p>Abre el archivo <code>README</code>, agrega una linea al final y guarda el archivo. En el panel Git el <code>Status</code> del archivo <code>README</code> cambiará a una <strong>M de color azul</strong>, esto significa <code>Modificado</code> (modified). Para ver cuál fue la modificación selecciona <code>Commit</code> en el panel Git y luego selecciona el archivo que has modificado. En la parte inferior de la ventana podrás ver las nuevas lineas resaltadas con verde y las lineas antiguas (las que ya no existen) resaltadas con rojo.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_06.png" alt="Fig. 9. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 9.</strong> Panel Git: Ventana Commit</p>
+</div>
+<p>Cuando estés satisfecho crea un <code>commit</code> con los cambios que has hecho en en <code>README</code>. Recuerda agregar un mensaje al <code>commit</code> que sea distinto a los anteriores.</p>
+</div>
+<div id="historial-de-commits" class="section level3">
+<h3><span class="header-section-number">6.3.7</span> Historial de <code>commits</code></h3>
+<p>Ahora podemos ver los commits creados y ver los cambios hechos desde que comenzamos nuestro proyecto.</p>
+<p>Si aun estás en la ventana donde creaste el <code>commit</code> selecciona <code>History</code> en la esquina superior izquierda. Si cerraste esa ventana puedes volver a ella seleccionando <code>Commit</code> en el panel Git de RStudio.</p>
+<p>La mitad superior de la ventana muestra los commits, el autor, la fecha y una llave SHA (este es un identificador único para cada commit). La mitad inferior muestra los cambios hechos en cada commit.</p>
+<div class="figure">
+<img src="docs/non-plain/img/panel_git_07.png" alt="Fig. 10. Panel Git: Ventana Commit" />
+<p class="caption"><strong>Fig. 10.</strong> Panel Git: Ventana Commit</p>
+</div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="repositorio-local-utilizando-un-r-project.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="git-avanzado-ish.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

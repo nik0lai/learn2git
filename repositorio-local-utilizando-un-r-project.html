@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Learn2Git. Introducción a Git y Github</title>
+  <meta name="description" content="Learn2Git. Introducción a Git y Github">
+  <meta name="generator" content="bookdown 0.7.13 and GitBook 2.6.7">
+
+  <meta property="og:title" content="Learn2Git. Introducción a Git y Github" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Learn2Git. Introducción a Git y Github" />
+  
+  
+  
+
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  
+  
+<link rel="prev" href="git-y-tu-el-primer-encuentro.html">
+<link rel="next" href="commit-commit-commit.html">
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Sobre Learn2Git</a></li>
+<li class="chapter" data-level="2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html"><i class="fa fa-check"></i><b>2</b> R y RStudio</a><ul>
+<li class="chapter" data-level="2.1" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#por-que-rstudio"><i class="fa fa-check"></i><b>2.1</b> ¿Por qué RStudio?</a></li>
+<li class="chapter" data-level="2.2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#instalacion-r-y-rstudio"><i class="fa fa-check"></i><b>2.2</b> Instalación <code>R</code> y <code>RStudio</code></a><ul>
+<li class="chapter" data-level="2.2.1" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#ya-tengo-rstudio"><i class="fa fa-check"></i><b>2.2.1</b> Ya tengo RStudio</a></li>
+<li class="chapter" data-level="2.2.2" data-path="r-y-rstudio.html"><a href="r-y-rstudio.html#no-tengo-rstudio"><i class="fa fa-check"></i><b>2.2.2</b> No tengo RStudio</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="instalacion-git.html"><a href="instalacion-git.html"><i class="fa fa-check"></i><b>3</b> Instalación Git</a><ul>
+<li class="chapter" data-level="3.1" data-path="instalacion-git.html"><a href="instalacion-git.html#instalacion-windows-y-mac"><i class="fa fa-check"></i><b>3.1</b> Instalación Windows y Mac</a></li>
+<li class="chapter" data-level="3.2" data-path="instalacion-git.html"><a href="instalacion-git.html#instalacion-linux"><i class="fa fa-check"></i><b>3.2</b> Instalación Linux</a></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="git-y-tu-el-primer-encuentro.html"><a href="git-y-tu-el-primer-encuentro.html"><i class="fa fa-check"></i><b>4</b> Git y tu, el primer encuentro</a></li>
+<li class="chapter" data-level="5" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html"><i class="fa fa-check"></i><b>5</b> Repositorio local utilizando un R Project</a><ul>
+<li class="chapter" data-level="5.0.1" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html#que-es-un-repositorio"><i class="fa fa-check"></i><b>5.0.1</b> ¿Qué es un repositorio?</a></li>
+<li class="chapter" data-level="5.0.2" data-path="repositorio-local-utilizando-un-r-project.html"><a href="repositorio-local-utilizando-un-r-project.html#crear-proyecto-en-rstudio"><i class="fa fa-check"></i><b>5.0.2</b> Crear Proyecto en RStudio</a></li>
+</ul></li>
+<li class="chapter" data-level="6" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html"><i class="fa fa-check"></i><b>6</b> Commit, commit, commit</a><ul>
+<li class="chapter" data-level="6.1" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#panel-git-en-rstudio"><i class="fa fa-check"></i><b>6.1</b> Panel Git en RStudio</a></li>
+<li class="chapter" data-level="6.2" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#commit"><i class="fa fa-check"></i><b>6.2</b> Commit</a></li>
+<li class="chapter" data-level="6.3" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#primer-commit"><i class="fa fa-check"></i><b>6.3</b> Primer <code>commit</code></a><ul>
+<li class="chapter" data-level="6.3.1" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#que-ha-cambiado"><i class="fa fa-check"></i><b>6.3.1</b> ¿Qué ha cambiado?</a></li>
+<li class="chapter" data-level="6.3.2" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#que-voy-a-incluir-en-el-commit"><i class="fa fa-check"></i><b>6.3.2</b> ¿Qué voy a incluir en el commit?</a></li>
+<li class="chapter" data-level="6.3.3" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#commit-1"><i class="fa fa-check"></i><b>6.3.3</b> Commit!</a></li>
+<li class="chapter" data-level="6.3.4" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#por-favor-readme"><i class="fa fa-check"></i><b>6.3.4</b> Por favor README!</a></li>
+<li class="chapter" data-level="6.3.5" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#crea-un-nuevo-archivo"><i class="fa fa-check"></i><b>6.3.5</b> Crea un nuevo archivo</a></li>
+<li class="chapter" data-level="6.3.6" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#cambia-todo-cambia"><i class="fa fa-check"></i><b>6.3.6</b> Cambia, todo cambia</a></li>
+<li class="chapter" data-level="6.3.7" data-path="commit-commit-commit.html"><a href="commit-commit-commit.html#historial-de-commits"><i class="fa fa-check"></i><b>6.3.7</b> Historial de <code>commits</code></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="7" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html"><i class="fa fa-check"></i><b>7</b> Git avanzado-<em>ish</em></a><ul>
+<li class="chapter" data-level="7.0.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#ignorar-archivos"><i class="fa fa-check"></i><b>7.0.1</b> Ignorar archivos</a></li>
+<li class="chapter" data-level="7.0.2" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#gitignore"><i class="fa fa-check"></i><b>7.0.2</b> .gitignore</a></li>
+<li class="chapter" data-level="7.0.3" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#acceder-a-versiones-pasadas-de-archivos"><i class="fa fa-check"></i><b>7.0.3</b> Acceder a versiones pasadas de archivos</a></li>
+<li class="chapter" data-level="7.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#la-terminal"><i class="fa fa-check"></i><b>7.1</b> La Terminal</a><ul>
+<li class="chapter" data-level="7.1.1" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#que-es-la-terminal"><i class="fa fa-check"></i><b>7.1.1</b> Qué es la terminal?</a></li>
+<li class="chapter" data-level="7.1.2" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#iniciando-la-terminal"><i class="fa fa-check"></i><b>7.1.2</b> Iniciando la terminal</a></li>
+<li class="chapter" data-level="7.1.3" data-path="git-avanzado-ish.html"><a href="git-avanzado-ish.html#windows-la-manzana-podrida"><i class="fa fa-check"></i><b>7.1.3</b> Windows, la manzana podrida</a></li>
+</ul></li>
+</ul></li>
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Learn2Git. Introducción a Git y Github</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="repositorio-local-utilizando-un-r-project" class="section level1">
+<h1><span class="header-section-number">5</span> Repositorio local utilizando un R Project</h1>
+<p>Sacado de Curating Research…</p>
+<div id="que-es-un-repositorio" class="section level3">
+<h3><span class="header-section-number">5.0.1</span> ¿Qué es un repositorio?</h3>
+<p>Un repositorio es simplemente el lugar donde almacenaremos los documentos, recursos como imágenes, scripts de códigos, datos, resultados, y en general cualquier recurso de un proyecto.</p>
+<p>En la sección sobre GitHub veremos cómo configurar un repositorio remoto al que podremos acceder desde cualquier parte, y que además estará disponible para cualquier persona si así lo deseamos. Por ahora trabajaremos con un repositorio local.</p>
+</div>
+<div id="crear-proyecto-en-rstudio" class="section level3">
+<h3><span class="header-section-number">5.0.2</span> Crear Proyecto en RStudio</h3>
+<p>Para crear un proyecto en RStudio iremos a <code>File &gt; New Project</code>, esto abrirá un cuadro de diálogo preguntando si queremos crear un proyecto en un nuevo directorio, en un directorio que ya existe, o recuperar un proyecto de un directorio que ya tiene control de versión. En este caso crearemos un nuevo directorio, así que seleccionaremos <code>New Directory</code> y luego a <code>New Project</code>.</p>
+<div class="figure">
+<img src="docs/non-plain/img/create_project_01.png" alt="Fig. 2. Ventana para crear nuevo proyecto (1)" />
+<p class="caption"><strong>Fig. 2.</strong> Ventana para crear nuevo proyecto (1)</p>
+</div>
+<div class="figure">
+<img src="docs/non-plain/img/create_project_02.png" alt="Fig. 3. Ventana para crear nuevo proyecto (2)" />
+<p class="caption"><strong>Fig. 3.</strong> Ventana para crear nuevo proyecto (2)</p>
+</div>
+<p>Tendremos que darle un nombre al proyecto y elegir un directorio para ubicar la carpeta del nuevo proyecto. También seleccionaremos la opción <code>Create a git repository</code> para crear automáticamente un repositorio Git junto con nuestro proyecto R.</p>
+<div class="figure">
+<img src="docs/non-plain/img/create_project_03.png" alt="Fig. 4. Ventana para crear nuevo proyecto (3)" />
+<p class="caption"><strong>Fig. 4.</strong> Ventana para crear nuevo proyecto (3)</p>
+</div>
+<p>Después de seleccionar <code>Create Project</code> se creará la carpeta en la dirección que hemos escogido y dos archivos en su interior:</p>
+<ul>
+<li><code>.gitignore</code>, y<br />
+</li>
+<li><code>repositorio-ejemplo.Rproj</code> (<code>repositorio-ejemplo</code> es el nombre que le has dado al proyecto)</li>
+</ul>
+<p><code>repositorio-ejemplo.Rproj</code> es un archivo de texto plano (sin formato) que contiene la configuración del proyecto (puedes cambiar la configuración en <code>Tools &gt; Project Options</code> en RStudio).</p>
+
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="git-y-tu-el-primer-encuentro.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="commit-commit-commit.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"google": false,
+"linkedin": false,
+"weibo": false,
+"instapper": false,
+"vk": false,
+"all": ["facebook", "google", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
