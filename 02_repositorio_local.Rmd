@@ -12,13 +12,13 @@ En la sección sobre GitHub veremos cómo configurar un repositorio remoto al qu
 
 Para crear un proyecto en RStudio iremos a  `File > New Project`, esto abrirá un cuadro de diálogo preguntando si queremos crear un proyecto en un nuevo directorio, en un directorio que ya existe, o recuperar un proyecto de un directorio que ya tiene control de versión. En este caso crearemos un nuevo directorio, así que seleccionaremos `New Directory` y luego a `New Project`.  
 
-![**Fig. 2.** Ventana para crear nuevo proyecto (1)](./docs/non-plain/img/create_project_01.png)
+![**Fig. 2.** Ventana para crear nuevo proyecto (1)](docs/non-plain/img/create_project_01.png)
 
-![**Fig. 3.** Ventana para crear nuevo proyecto (2)](./docs/non-plain/img/create_project_02.png)
+![**Fig. 3.** Ventana para crear nuevo proyecto (2)](docs/non-plain/img/create_project_02.png)
 
 Tendremos que darle un nombre al proyecto y elegir un directorio para ubicar la carpeta del nuevo proyecto. También seleccionaremos la opción `Create a git repository` para crear automáticamente un repositorio Git junto con nuestro proyecto R.  
 
-![**Fig. 4.** Ventana para crear nuevo proyecto (3)](./docs/non-plain/img/create_project_03.png)
+![**Fig. 4.** Ventana para crear nuevo proyecto (3)](docs/non-plain/img/create_project_03.png)
 
 Después de seleccionar `Create Project` se creará la carpeta en la dirección que hemos escogido y dos archivos en su interior:  
 
